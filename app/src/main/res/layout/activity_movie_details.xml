@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mygray" android:id="@+id/id_id">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="322dp" app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/id_details_image" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:background="#001F1616"
+                android:layout_marginTop="16dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp"/>
+        <TextView
+                android:text="2019"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/id_details_release_date"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_title"
+                android:layout_marginTop="32dp"/>
+        <TextView
+                android:text="lang: en"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_height="30dp"
+                android:id="@+id/id_details_language"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_release_date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/id_details_release_date"
+                app:layout_constraintEnd_toEndOf="@+id/id_details_release_date" android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="Description: Dramatisation of Louisa May Alcott's novel about the lives of the four March sisters during the American Civil War as they learn to navigate love, loss and the trials of growing up."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:id="@+id/id_details_description"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_rate"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="24dp" app:layout_constraintBottom_toTopOf="@+id/id_details_ratingBar"
+                android:layout_marginStart="40dp" android:layout_marginEnd="40dp"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="Rate: 7.2"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/id_details_rate"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_language"
+                app:layout_constraintEnd_toEndOf="@+id/id_details_language"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/id_details_language"
+        />
+        <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressBackgroundTint="@android:color/darker_gray"
+                android:stepSize="1"
+                android:id="@+id/id_details_ratingBar"
+                app:layout_constraintStart_toStartOf="@+id/id_details_description"
+                android:background="#00DAC0C0"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/id_details_description"
+                app:layout_constraintHorizontal_bias="0.542"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_description"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_details_title"
+                android:textColor="#25E89E"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="@+id/id_details_image" app:layout_constraintHorizontal_bias="0.568"
+                app:layout_constraintStart_toStartOf="@+id/id_details_image"
+                app:layout_constraintTop_toBottomOf="@+id/id_details_image" android:layout_marginEnd="8dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium" android:gravity="center"/>
+        <ToggleButton
+                android:background="@drawable/button_favorite"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="59dp"
+                android:layout_height="60dp"
+                android:id="@+id/id_like" app:layout_constraintStart_toEndOf="@+id/id_details_title"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="@+id/id_details_title"
+                app:layout_constraintBottom_toBottomOf="@+id/id_details_title"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

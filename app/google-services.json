@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698553981084",
+    "firebase_url": "https://registration-ca8a5.firebaseio.com",
+    "project_id": "registration-ca8a5",
+    "storage_bucket": "registration-ca8a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698553981084:android:d08e18b6571b9053acf559",
+        "android_client_info": {
+          "package_name": "com.example.moviefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698553981084-taeuei3r7k3104298et02hj9gn2hu8kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzd21p938vS6Bxim9c5UjtsAGtnm3pEhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698553981084-taeuei3r7k3104298et02hj9gn2hu8kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
